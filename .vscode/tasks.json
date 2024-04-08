@@ -10,8 +10,8 @@
                 //"${file}",
                 "*.c",//当前文件夹所有的.c文件都编译
                 "-o",
-                //"${fileDirname}\\${fileBasenameNoExtension}.exe"
-                "${fileDirname}\\a.exe"//生成的可执行程序名称
+                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+                //"${fileDirname}\\a.exe"//生成的可执行程序名称
             ],
             "options": {
                 "cwd": "${fileDirname}"
