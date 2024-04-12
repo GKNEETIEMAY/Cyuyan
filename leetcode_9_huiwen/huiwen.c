@@ -1,4 +1,4 @@
-#include<stdbool.h>
+#include<stdbool.h>//bool变量的函数定义，在此编译器中必须要用“stdbool.h”头文件
 bool isPalindrome(int x) 
 {
     int a,b=0,j=10,d;
