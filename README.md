@@ -1,7 +1,7 @@
 # C语言学习笔记以及练习 :stuck_out_tongue_closed_eyes:
 ## 目录
 1. VSCode安装、配置环境及测试
-2. c语言项目练习:yum:
+2. c语言项目练习 :yum:
 3. 数据结构练习
 4. leetcode练习
 ### 正文
