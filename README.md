@@ -1,8 +1,8 @@
 # C语言学习笔记以及练习 :stuck_out_tongue_closed_eyes:
 ## 目录
 1. VSCode安装、配置环境及测试 
-2. 
-3. 
+2. 数据结构练习
+3. leetcode练习
 ### 正文
 1. **VSCode安装、配置环境及测试**
    1. 打开网站：`https://code.visualstudio.com`，下载VSCode并解压安装到合适的文件夹
