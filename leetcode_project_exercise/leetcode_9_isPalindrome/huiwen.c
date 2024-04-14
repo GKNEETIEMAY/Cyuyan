@@ -17,7 +17,7 @@ bool isPalindrome(int x)
             b=b+1;
         }
         b=b+1;//以上统计给出的int型变量的位数
-        d=b;
+        d=b;//计数器，为c[i]的量
         for(int i=1;i<=b;i++)//分别将个位，十位......复制到以c[1]开头的数组中，c[0]为空
         {
             c[i]=x%j;//求余数
