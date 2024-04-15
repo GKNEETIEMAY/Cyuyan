@@ -10,5 +10,4 @@ int main(){
     printf("float的长度:%d\n",sizeof(float));            //4
     printf("double的长度:%d\n",sizeof(double));          //8
     return 0;
-    
 }
