@@ -1,0 +1,52 @@
+Date : 2024-04-16 21:22:47
+Directory : d:\vscodeproject\Cyuyan
+Total : 15 files,  171 codes, 26 comments, 9 blanks, all 206 lines
+
+Languages
++----------+------------+------------+------------+------------+------------+
+| language | files      | code       | comment    | blank      | total      |
++----------+------------+------------+------------+------------+------------+
+| C        |         11 |        158 |         25 |          8 |        191 |
+| Markdown |          1 |         10 |          0 |          1 |         11 |
+| C++      |          3 |          3 |          1 |          0 |          4 |
++----------+------------+------------+------------+------------+------------+
+
+Directories
++---------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                    | files      | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                       |         15 |        171 |         26 |          9 |        206 |
+| . (Files)                                                                                               |          1 |         10 |          0 |          1 |         11 |
+| C_test_project                                                                                          |          2 |         11 |          2 |          1 |         14 |
+| C_test_project\1_datatype                                                                               |          1 |         11 |          2 |          0 |         13 |
+| C_test_project\2_                                                                                       |          1 |          0 |          0 |          1 |          1 |
+| data_structure_exercise                                                                                 |          1 |          9 |          0 |          2 |         11 |
+| data_structure_exercise\Linklist_1                                                                      |          1 |          9 |          0 |          2 |         11 |
+| leetcode                                                                                                |          2 |         56 |         22 |          5 |         83 |
+| leetcode_project_exercise                                                                               |          4 |         54 |          2 |          0 |         56 |
+| leetcode_project_exercise\leetcode_3_lengthOfLongestSubstring                                           |          1 |          4 |          0 |          0 |          4 |
+| leetcode_project_exercise\leetcode_9_isPalindrome                                                       |          3 |         50 |          2 |          0 |         52 |
+| test1_hello                                                                                             |          5 |         31 |          0 |          0 |         31 |
++---------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++---------------------------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| filename                                                                                                | language | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| d:\vscodeproject\Cyuyan\C_test_project\1_datatype\main.c                                                | C        |         11 |          2 |          0 |         13 |
+| d:\vscodeproject\Cyuyan\C_test_project\2_\main.c                                                        | C        |          0 |          0 |          1 |          1 |
+| d:\vscodeproject\Cyuyan\README.md                                                                       | Markdown |         10 |          0 |          1 |         11 |
+| d:\vscodeproject\Cyuyan\data_structure_exercise\Linklist_1\01.c                                         | C        |          9 |          0 |          2 |         11 |
+| d:\vscodeproject\Cyuyan\leetcode\1.两数之和.c                                                               | C        |         19 |         15 |          3 |         37 |
+| d:\vscodeproject\Cyuyan\leetcode\9.回文数.c                                                                | C        |         37 |          7 |          2 |         46 |
+| d:\vscodeproject\Cyuyan\leetcode_project_exercise\leetcode_3_lengthOfLongestSubstring\zuichangzichuan.c | C        |          4 |          0 |          0 |          4 |
+| d:\vscodeproject\Cyuyan\leetcode_project_exercise\leetcode_9_isPalindrome\huiwen.c                      | C        |         37 |          0 |          0 |         37 |
+| d:\vscodeproject\Cyuyan\leetcode_project_exercise\leetcode_9_isPalindrome\huiwen.h                      | C++      |          1 |          1 |          0 |          2 |
+| d:\vscodeproject\Cyuyan\leetcode_project_exercise\leetcode_9_isPalindrome\huiwen1.c                     | C        |         12 |          1 |          0 |         13 |
+| d:\vscodeproject\Cyuyan\test1_hello\hello_world.c                                                       | C        |         15 |          0 |          0 |         15 |
+| d:\vscodeproject\Cyuyan\test1_hello\max.c                                                               | C        |          7 |          0 |          0 |          7 |
+| d:\vscodeproject\Cyuyan\test1_hello\max.h                                                               | C++      |          1 |          0 |          0 |          1 |
+| d:\vscodeproject\Cyuyan\test1_hello\min.c                                                               | C        |          7 |          0 |          0 |          7 |
+| d:\vscodeproject\Cyuyan\test1_hello\min.h                                                               | C++      |          1 |          0 |          0 |          1 |
+| Total                                                                                                   |          |        171 |         26 |          9 |        206 |
++---------------------------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
