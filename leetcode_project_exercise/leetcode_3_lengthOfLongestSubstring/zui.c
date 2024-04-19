@@ -4,27 +4,36 @@ int lengthOfLongestSubstring(char *s)
 {
     char *a = s;
     int i, j, lon, m, n;
-    lon = strlen(a) - 1; // 输入的字符串数组除去\0的长度
+    lon = strlen(a) - 1; // 输入的字符串数组的长度
     m = 0;               // 计数
-    printf("%d\n", lon);
     n = lon; // 滑框尺寸
-    for (; n < 1; n--)
+    if (n < 0)          //防止出现""
     {
-        for (i = 0; i <= lon - n; i++)
+        return m ;
+    }
+    else
+    {
+        for (; n > 1; n--)
         {
-            for (j = i + n; j > i; j--)
+            printf("滑框长度为:%d\n",n);
+            for (i = 0; i <= lon - n; i++)
             {
-                if (a[i] != a[j])
+                printf("从a[%d]开始\n",i);
+                for (m = 0, j = i + n; j > i; j--)
                 {
-                    m = m + 1;
-                }
-                if (m == n)
-                {
-                    printf("%d\n", m);
-                    break;
+                    if (a[i] != a[j])
+                    {
+                        m = m + 1;
+                        printf("m=%d\n", m);
+                    }
+                    if (m == n)
+                    {
+                        printf("此时的m==n,m+1=%d\n", m+1);//c此处有问题
+                        return m+1;
+                    }
                 }
             }
         }
+        return m+1;
     }
-    return m;
 }

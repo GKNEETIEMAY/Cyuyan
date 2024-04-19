@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include"zui.h"
 int main(){
-    char *s="abcabcbb";
+    char *s="abcb";
     int a;
     printf("%s\n",s);
     a=lengthOfLongestSubstring(s);

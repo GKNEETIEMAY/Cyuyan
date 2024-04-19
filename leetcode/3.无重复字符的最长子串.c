@@ -7,20 +7,36 @@
 // @lc code=start
 int lengthOfLongestSubstring(char *s)
 {
-    char arr1[] = s;
-    int i, j, l;
-    l = sizeof(arr1) - 2; // 输入的字符串数组除去\0的长度
-    for (i = 0; i < l; i++)
+    char *a = s;
+    int i, j, lon, m, n;
+    lon = strlen(a) - 1; // 输入的字符串数组的长度
+    m = 0;               // 计数
+    n = lon; // 滑框尺寸
+    printf("%d\n", lon);
+    if (lon < 0)
     {
-        for (j = l; j > i; j--)
+        return m;
+    }
+    else
+    {
+        for (; n > 1; n--)
         {
-            if (arr1[i] = arr1[j])
+            for (i = 0; i <= lon - n; i++)
             {
-                continue;
+                for (m = 0, j = i + n; j > i; j--)
+                {
+                    if (a[i] != a[j])
+                    {
+                        m = m + 1;
+                    }
+                    if (m == n)
+                    {
+                        break;
+                    }
+                }
             }
-            else
-                return j - i;
         }
+        return m+1;
     }
 }
 // @lc code=end
