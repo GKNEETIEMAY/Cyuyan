@@ -7,7 +7,7 @@
 int main()
 {
     char arr1[] = "abc"; // 字符串:abc\0,\0为字符串结束的标志
-    char arr2[] = {'a', 'b', 'c',0};
+    char arr2[] = {'a', 'b', 'c',0};//要使用
     int i;
     // printf("%s\n",arr1[0]);//error:Segmentation fault,原因是%c用于单个字符，%s用于整个字符串
     printf("arr1=%s\n", arr1);
