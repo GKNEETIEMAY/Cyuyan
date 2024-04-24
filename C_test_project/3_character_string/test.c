@@ -4,6 +4,7 @@
  *
  * **/
 #include <stdio.h>
+#include<string.h>
 int main()
 {
     char arr1[] = "abc"; // 字符串:abc\0,\0为字符串结束的标志
@@ -14,6 +15,8 @@ int main()
     printf("arr2=%s\n", arr2);
     arr2[0]='d';
     printf("arr2=%s\n", arr2);
+    //strlen()是求字符串长度
+    printf("arr2的长度是%d\n",strlen(arr2));
     for ( i = 0; i < 4; i++)
     {
         printf("arr2[%d]=%c\n",i, arr2[i]);
