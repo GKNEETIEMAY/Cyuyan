@@ -5,7 +5,8 @@
 int main()
 {
     char arr1[] = "abc"; // 字符串:abc\0,\0为字符串结束的标志
-    char arr2[] = {'a', 'b', 'c',0};//要使用0，结尾，否则会出现异常的打印
+    char arr2[] = {'a', 'b', 'c','\0'};//要使用0，结尾，否则会出现异常的打印
+    char arr3[] = {'a', 'b', 'c',0};
     int i;
     // printf("%s\n",arr1[0]);//error:Segmentation fault,原因是%c用于单个字符，%s用于整个字符串
     printf("arr1=%s\n", arr1);
@@ -17,6 +18,10 @@ int main()
     for ( i = 0; i < 4; i++)
     {
         printf("arr2[%d]=%c\n",i, arr2[i]);
+    }
+    if (arr2[3]==arr3[3])
+    {
+        printf("此编译器下arr2[3]与arr3[3]的结尾用0和\\0是一样的！\n");
     }
     
     return 0;
