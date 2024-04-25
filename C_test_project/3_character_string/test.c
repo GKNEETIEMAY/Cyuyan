@@ -21,7 +21,7 @@ int main()
     }
     if (arr2[3]==arr3[3])
     {
-        printf("此编译器下arr2[3]与arr3[3]的结尾用0和\\0是一样的！\n");
+        printf("此编译器下的arr2[3]与arr3[3]的结尾用0和\\0是一样的！\n");
     }
     
     return 0;
