@@ -1,5 +1,4 @@
 // 函数
-//
 #include <stdio.h>
 int MAX(int x,int y);//主函数在上时，要在最上方定义一下
 int main()
@@ -23,15 +22,12 @@ int main()
 
 int MAX(int x, int y)
 {
-    int a;
     if (x > y)
     {
-        a = x;
-        return a;
+        return x;
     }
     else
     {
-        a = y;
-        return a;
+        return y;
     }
 }
