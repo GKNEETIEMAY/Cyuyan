@@ -20,7 +20,7 @@ int main()
     return 0;
 }
 
-int MAX(int x, int y)
+int MAX(int x, int y)//比较大小函数
 {
     if (x > y)
     {
