@@ -33,6 +33,7 @@
 // while
 // 注意define不是一种关键字
 #include <stdio.h>
+extern int Add(int a, int b);//声明外部函数
 // static修饰局部变量时
 void test()
 {
@@ -46,8 +47,10 @@ void test()
 }
 int main()
 {
-
+    int a=1,b=1,sum;
+    
     // int float;//err
+
     // 关键字typedef
     typedef unsigned int unit_32;
     unsigned int n1 = 1;
@@ -56,15 +59,20 @@ int main()
     {
         printf("重命名后,n1==n2\n");
     }
+
     // 关键字static
     for (int i = 0; i < 5; i++)
     {
         test();
     }
+
     // 关键字extern
     extern int g_val1;
     // extern int g_val2;
     printf("g_val1=%d\n", g_val1);
     // printf("g_val2=%d\n", g_val2);//err，g_val2 是static修饰
+    sum=Add(a,b);
+    printf("sum = %d\n",sum);
+
     return 0;
 }
