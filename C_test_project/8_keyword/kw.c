@@ -44,7 +44,7 @@ void test()
 int main(){
 
     //int float;//err
-
+    //关键字typedef
     typedef unsigned int unit_32;
     unsigned int n1=1;
     unit_32 n2=1;//n1=n2
@@ -52,7 +52,7 @@ int main(){
     {
         printf("n1==n2\n");
     }
-    
+    //关键字static
     for(int i=0;i<5;i++)
     {
         test();
