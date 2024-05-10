@@ -52,6 +52,7 @@ int main(){
     {
         printf("n1==n2\n");
     }
+    
     for(int i=0;i<5;i++)
     {
         test();
