@@ -37,7 +37,7 @@
 void test()
 {
     int a = 1;        // 会被销毁
-    static int b = 1; // b是一个静态局部变量，不会被销毁，局部变量的生命周期变长
+    static int b = 1; // b是一个静态局部变量，不会被销毁，局部变量的!生命周期变长!
     a++;
     b++;
     printf("注意比较\n");
@@ -63,7 +63,8 @@ int main()
     }
     // 关键字extern
     extern int g_val1;
+    // extern int g_val2;
     printf("g_val1=%d\n", g_val1);
-
+    // printf("g_val2=%d\n", g_val2);//err，g_val2 是static修饰
     return 0;
 }
