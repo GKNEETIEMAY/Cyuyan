@@ -2,14 +2,14 @@
 >Markdown语法速查表：https://markdown.com.cn/cheat-sheet.html
 ---
 ## 目录
-1. c语言练习 :yum:
-2. 数据结构练习
-3. leetcode习题
-4. leetcode习题本地练习
+1. c语言练习-C_test_project :yum:
+2. 数据结构练习-data_structure_exercise
+3. leetcode习题-leetcode
+4. leetcode习题本地练习-leetcode_project_exercise
 5. VSCode安装、配置环境、插件
 ---
 ### 正文
-#### 1.**c语言练习**
+#### 1.**c语言练习-C_test_project**
 - 1.数据类型  
 主要学习了以下内容：
 int、
@@ -21,15 +21,15 @@ int、
 - 7.操作符
 - 8.
 ---
-#### 2.**数据结构练习**
+#### 2.**数据结构练习-data_structure_exercise**
 ---
-#### 3.**leetcode习题**
+#### 3.**leetcode习题-leetcode**
 - 1.两数之和
 - 2.
 - 3.无重复字符的最长字串
 ---
 
-#### 4.**leetcode习题本地练习**
+#### 4.**leetcode习题本地练习-leetcode_project_exercise**
 ---
 #### 5. **VSCode安装、配置环境及测试**
 
