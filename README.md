@@ -1,4 +1,4 @@
-# C语言 :stuck_out_tongue_closed_eyes:
+# C语言 :stuck_out_tongue_closed_eyes:（完善中）
 >Markdown语法速查表：https://markdown.com.cn/cheat-sheet.html
 ---
 ## 目录
