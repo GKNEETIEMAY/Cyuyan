@@ -29,5 +29,12 @@ int main()
     // 指针大小在32位机器上是4字节，64位机器上是4字节
     printf("%d\n", sizeof(int *));  // 8->64位机器
     printf("%d\n", sizeof(char *)); // 8->64位机器
+
+    //浮点数举例子
+    double r=3.14;
+    double *pr=&r;
+    printf("r=%f\n",r);
+    *pr =5.5;
+    printf("r=%f,*pr=r=%f\n",r,*pr);
     return 0;
 }
