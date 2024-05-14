@@ -17,7 +17,9 @@ int main()
     // book b;
     printf("a书的价格是:%.3f元\n", a.price);
     struct Book *pa = &a;
+    //.操作符找结构体变量的成员时：变量.成员
     printf("a书的版号是:%d\n", (*pa).copyright); // 法1：结构体利用指针需要加括号
-    printf("a书的作者是:%s\n", pa->author); // 法2：指针指向位置
+    //->操作符找到结构体变量的成员时：指针->成员
+    printf("a书的作者是:%s\n", pa->author); // 法2：指针指向对象的内部成员
     return 0;
 }
