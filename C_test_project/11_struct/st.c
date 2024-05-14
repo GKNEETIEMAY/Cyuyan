@@ -14,6 +14,7 @@ struct Book
 int main()
 {
     struct Book a={"cyuyan","lxl",20.5,10001};
+    printf("a书的价格是:%f\n",a.price);
 
 
     return 0;
