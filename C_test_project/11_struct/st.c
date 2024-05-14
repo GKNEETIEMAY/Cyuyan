@@ -1,5 +1,5 @@
 /***
- * 结构体
+ * 结构体-描述复杂对象
  */
 #include<stdio.h>
 int main()
