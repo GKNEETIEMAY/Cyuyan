@@ -32,6 +32,7 @@ int main()
         printf("a>1\n");
     }
     c = a > b ? true : false;
+    // if双分支
     if (c)
     {
         printf("big a\n");
@@ -40,6 +41,7 @@ int main()
     {
         printf("big b\n");
     }
+    // if多分支
     if (age<18)
         printf("未成年\n");
     else if (age<=18&&age<23) 
