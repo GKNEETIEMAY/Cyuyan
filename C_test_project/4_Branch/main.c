@@ -52,5 +52,6 @@ int main()
         printf("老年\n");
     else
         printf("老不死\n");
+    //scase分支
     return 0;
 }
