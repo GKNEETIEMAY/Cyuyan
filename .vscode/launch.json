@@ -5,14 +5,15 @@
             "name": "(gdb) 启动",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
+            //"program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
+            "program": "${fileDirname}\\a.exe",//需要调试的可执行程序.exe
             "args": [],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
             "environment": [],
             "externalConsole": false,
             "MIMode": "gdb",
-            "miDebuggerPath": "C:\\Program Files\\mingw64\\bin\\gdb.exe",
+            "miDebuggerPath": "C:\\Program Files\\mingw64\\bin\\gdb.exe",//gdb的位置
             "setupCommands": [
                 {
                     "description": "为 gdb 启用整齐打印",
@@ -30,7 +31,7 @@
             "name": "C/C++: gcc.exe 生成和调试活动文件",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
+            "program": "${fileDirname}\\a.exe",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
