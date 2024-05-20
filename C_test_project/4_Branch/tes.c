@@ -87,5 +87,15 @@ int main(){
         printf("周日\n");
         break;
     }
+    int i = 1;
+    int e;
+    for (; i <= 100; i++)
+    {
+        e = i % 2;  // 奇数的模2运算结果为1
+        if (e == 1) // 判断是否为奇数
+        {
+            printf("1-100的奇数:%d\n", i);
+        }
+    }
     return 0;
 }
