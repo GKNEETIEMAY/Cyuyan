@@ -26,9 +26,11 @@ bool isPalindrome(int x)
         {
             if (c[k] != c[d])
             {
+                printf("false\n");
                 return false;
             }
         }
+        printf("true\n");
         return true;
     }
 }

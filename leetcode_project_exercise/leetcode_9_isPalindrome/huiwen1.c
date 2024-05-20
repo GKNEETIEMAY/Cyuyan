@@ -7,6 +7,7 @@ int main()//void main写法过时了，void main不用返回值
     bool y;
     printf("请你输入一个数字：\n");
     scanf("%d",&x);
+    printf("%d\n",x);
     y=isPalindrome(x);
     return 0;
 }

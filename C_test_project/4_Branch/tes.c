@@ -29,8 +29,7 @@
  */
 #include <stdio.h>
 #include <stdbool.h>
-int main()
-{
+int main(){
     int a = 5;
     int b = 6;
     int age = 100;
