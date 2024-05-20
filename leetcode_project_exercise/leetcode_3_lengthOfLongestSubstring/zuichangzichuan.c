@@ -5,6 +5,6 @@ int main(){
     int a;
     printf("%s\n",s);
     a=lengthOfLongestSubstring(s);
-    printf("结束%d\n",a);
+    printf("结束:%d\n",a);
     return 0;
 }
