@@ -16,7 +16,7 @@
  *     ...
  * else
  *     语句3;
- * 4.stwich语句:
+ * 4.switch语句:
  */
 #include <stdio.h>
 #include <stdbool.h>
@@ -52,6 +52,6 @@ int main()
         printf("老年\n");
     else
         printf("老不死\n");
-    //scase分支
+    //switch case分支
     return 0;
 }
