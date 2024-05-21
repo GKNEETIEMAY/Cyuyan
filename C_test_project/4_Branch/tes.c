@@ -20,16 +20,17 @@
  * switch (expression)
     {
     case  constant-expression :
-        code 
+        code
         break;
-    
+
     default:
         break;
     }
  */
 #include <stdio.h>
 #include <stdbool.h>
-int main(){
+int main()
+{
     int a = 5;
     int b = 6;
     int age = 100;
@@ -62,8 +63,10 @@ int main(){
     else
         printf("老不死\n");
     // switch case分支
-    scanf("请输入一个1-7的数字:\n%d",&day);
-    switch (day)//switch判断表达式必须是整型
+    printf("请输入一个1-7的数字:\n");
+    scanf("%d", &day);
+    printf("%d\n",day);
+    switch (day) // switch判断表达式必须是整型
     {
     case 1:
         printf("周一\n");
@@ -83,8 +86,11 @@ int main(){
     case 6:
         printf("周六\n");
         break;
-    default:
+    case 7:
         printf("周日\n");
+        break;
+    default:
+        printf("错误的输入\n");
         break;
     }
     int i = 1;
