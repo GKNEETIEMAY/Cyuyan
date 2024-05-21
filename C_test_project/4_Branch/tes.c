@@ -63,7 +63,7 @@ int main(){
         printf("老不死\n");
     // switch case分支
     scanf("请输入一个1-7的数字:\n%d",&day);
-    switch (day)
+    switch (day)//switch判断表达式必须是整型
     {
     case 1:
         printf("周一\n");
