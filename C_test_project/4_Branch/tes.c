@@ -66,7 +66,7 @@ int main()
     printf("请输入一个1-7的数字:\n");
     scanf("%d", &day);
     printf("%d\n",day);
-    switch (day) // switch判断表达式必须是整型
+    switch (day) // switch判断表达式必须是整型，允许嵌套使用
     {
     case 1:
         printf("周一\n");
