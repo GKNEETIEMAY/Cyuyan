@@ -1,4 +1,4 @@
-/***
+/***循环
  * 1.while:
  *  while ( condition )
     {
