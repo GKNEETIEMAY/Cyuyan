@@ -1,5 +1,6 @@
 # C语言 :stuck_out_tongue_closed_eyes:（完善中）
 >Markdown语法速查表：https://markdown.com.cn/cheat-sheet.html
+A valuable resource for novice Chinese C language learners.
 ---
 ## 目录
 1. c语言练习-C_test_project :yum:
