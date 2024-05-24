@@ -52,7 +52,7 @@ int main()
         a++;
     } while (a < 3);
     int ch = 0;
-    ch = getchar(); // getchar()每次可以读取多个字符
+    ch = getchar(); // getchar()每次可以读取一个字符
     putchar(ch);    // putchar()每次输出一个字符
     printf("sizeof(ch)=%d\n", sizeof(ch));
     printf("-----------\n");        // 检测线
