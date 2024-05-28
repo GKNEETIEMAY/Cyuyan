@@ -55,6 +55,7 @@ int main()
     ch = getchar(); // getchar()每次可以读取一个字符
     putchar(ch);    // putchar()每次输出一个字符
     printf("\nsizeof(ch)=%d\n", sizeof(ch));
+    printf("%d\n", ch);             // 输出的是字符的ASCII编码值
     printf("-----------\n");        // 检测线
     while ((ch = getchar()) != EOF) // EOF=Ctrl+c=end of file
     {
