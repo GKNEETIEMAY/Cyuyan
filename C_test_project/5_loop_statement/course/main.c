@@ -58,7 +58,7 @@ int main()
     printf("-----------\n");        // 检测线
     while ((ch = getchar()) != EOF) // EOF=Ctrl+c
     {
-        printf("============\n"); // 检测线.
+        printf("============\n"); // 检测线
         putchar(ch);
     }
 
