@@ -56,7 +56,7 @@ int main()
     putchar(ch);    // putchar()每次输出一个字符
     printf("\nsizeof(ch)=%d\n", sizeof(ch));
     printf("-----------\n");        // 检测线
-    while ((ch = getchar()) != EOF) // EOF=Ctrl+c
+    while ((ch = getchar()) != EOF) // EOF=Ctrl+c=end of file
     {
         printf("============\n"); // 检测线
         putchar(ch);
