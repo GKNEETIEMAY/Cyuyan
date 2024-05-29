@@ -22,20 +22,23 @@ double findMedianSortedArrays(int *nums1, int nums1Size, int *nums2, int nums2Si
                 nums3[middle] = nums1[left];
                 middle++;
                 left++;
+                continue;
             }
             else if (nums1[left] == nums2[right])
             {
                 nums3[middle] = nums1[left];
-                nums3[middle + 1] = nums1[right];
+                nums3[middle + 1] = nums2[right];
                 middle = middle + 2;
                 left++;
                 right++;
+                continue;
             }
             else
             {
-                nums3[middle] = nums1[right];
+                nums3[middle] = nums2[right];
                 middle++;
                 right++;
+                continue;
             }
         }
         //数组1空
@@ -44,6 +47,7 @@ double findMedianSortedArrays(int *nums1, int nums1Size, int *nums2, int nums2Si
             nums3[middle]=nums2[right];
             middle++;
             right++;
+            continue;
         }
         //数组2空
         else if (right>=nums2Size)
@@ -51,6 +55,7 @@ double findMedianSortedArrays(int *nums1, int nums1Size, int *nums2, int nums2Si
             nums3[middle]=nums1[left];
             middle++;
             left++;
+            continue;
         }   
     }
     // 寻找两个正序数组的中位数,需要判断合并数组的下标和是奇数还是偶数
@@ -61,14 +66,14 @@ double findMedianSortedArrays(int *nums1, int nums1Size, int *nums2, int nums2Si
     {
         i = (nums3Size - 1) / 2;
         j = i;
-        median = (nums3[i] + nums3[j]) / 2;
+        median = ((double)nums3[i] + (double)nums3[j]) / 2;
     }
     // 如果是偶数个
-    if (nums3Size % 2 == 1)
+    if (nums3Size % 2 == 0)
     {
         i = (nums3Size - 1) / 2;
         j = i + 1;
-        median = (nums3[i] + nums3[j]) / 2;
+        median = ((double)nums3[i] + (double)nums3[j]) / 2;
     }
     return median;
 }
