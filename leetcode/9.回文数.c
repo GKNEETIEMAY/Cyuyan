@@ -13,10 +13,9 @@ bool isPalindrome(int x)
     a = x;
     if (a < 0) // 判断如果是负数，直接pass
     {
-        printf("false");
         return false;
     }
-    else
+    else//求出每一位数字，按照个位，十位放入一个数组中，两端进行比较
     {
         while (a >= 10)
         {
@@ -34,11 +33,9 @@ bool isPalindrome(int x)
         {
             if (c[k] != c[d])
             {
-                printf("false");
                 return false;
             }
         }
-        printf("true");
         return true;
     }
 }
