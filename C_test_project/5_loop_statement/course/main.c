@@ -51,8 +51,9 @@ int main()
         printf("do while循环中a=%d\n", a);
         a++;
     } while (a < 3);
+    //示例1
     int ch = 0;
-    ch = getchar(); // getchar()每次可以读取一个字符
+    ch = getchar(); // getchar()每次可以读取输入缓冲区的一个字符
     putchar(ch);    // putchar()每次输出一个字符
     printf("\nsizeof(ch)=%d\n", sizeof(ch));
     printf("%d\n", ch);             // 输出的是字符的ASCII编码值
@@ -62,6 +63,7 @@ int main()
         printf("============\n"); // 检测线
         putchar(ch);
     }
-
+    //示例2
+    
     return 0;
 }

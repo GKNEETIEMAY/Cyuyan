@@ -41,7 +41,7 @@ double findMedianSortedArrays(int *nums1, int nums1Size, int *nums2, int nums2Si
                 continue;
             }
         }
-        // 数组1空
+        // 数组1空，将数组2剩余的复制到数组3中
         else if (left >= nums1Size)
         {
             nums3[middle] = nums2[right];
@@ -49,7 +49,7 @@ double findMedianSortedArrays(int *nums1, int nums1Size, int *nums2, int nums2Si
             right++;
             continue;
         }
-        // 数组2空
+        // 数组2空，将数组1剩余的复制到数组3中
         else if (right >= nums2Size)
         {
             nums3[middle] = nums1[left];
