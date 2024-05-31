@@ -5,7 +5,7 @@
  */
 
 // @lc code=start
-char z[1001] = {0}; // 返回值
+char z[1001] = {0}; // 全局变量最后能返回，不至于被销毁
 char *longestPalindrome(char *s)
 {
     int length = strlen(s);  // 字符串的长度,5->0,4
@@ -20,17 +20,18 @@ char *longestPalindrome(char *s)
     }
     else
     {
-        for (n = length - 1; n >= 0; n--) // 滑框进行减小的过程
+        for (n = length - 1; n >= 0; n--) // 滑框进行减小的过程,最小到0（长度为一）
         {
-            for (left = 0; left < length - n; left++)
+            for (left = 0; left < length - n; left++) // 左边界所在的位置
             {
-                head = left;      // 记录此次的左边初始位置
-                right = left + n; // 定义右边的大小
-                while (s[left] == s[right])
+                // 记录此次的左边初始位置，防止后续比较发生改变，同样也记录成功后的起始位置
+                head = left;
+                right = left + n;           // 定义右边的大小
+                while (s[left] == s[right]) // 如果是最长回文子串，能满足最终比较条件
                 {
                     if (left >= right)
                     {
-                        for (int i = 0; i <= n; i++)
+                        for (int i = 0; i <= n; i++) // 赋值
                         {
                             z[i] = *(s + head + i);
                         }
@@ -39,8 +40,8 @@ char *longestPalindrome(char *s)
                     left++;
                     right--;
                 }
-                left = head; // 恢复原始的left指向的位置
-                if (strlen(z) != 0)
+                left = head;        // 恢复原始的left指向的位置
+                if (strlen(z) != 0) // 第一次出现最长子串后
                 {
                     break;
                 }
