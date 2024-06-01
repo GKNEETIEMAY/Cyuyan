@@ -35,7 +35,7 @@ int main()
             break;
         }
     }
-    // for
+    // for：更加简洁明了
     for (; a > 0; a--)
     {
         if (a == 1)

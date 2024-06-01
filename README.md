@@ -5,11 +5,11 @@
 
 ---
 ## 目录
-1.C语言练习(C_test_project) :yum:
-2.数据结构练习(data_structure_exercise)
-3.leetcode题解(leetcode)
-4.leetcode本地题解(leetcode_project_exercise)
-5.VSCode安装、配置环境、插件、一些问题
+- 1.C语言练习(C_test_project) :yum:
+- 2.数据结构练习(data_structure_exercise)
+- 3.leetcode题解(leetcode)
+- 4.leetcode本地题解(leetcode_project_exercise)
+- 5.VSCode安装、配置环境、插件、一些问题
 
 ---
 ### 正文
