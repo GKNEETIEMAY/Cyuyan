@@ -5,7 +5,7 @@
 
 ---
 ## 目录
-- 1.C语言练习(C_test_project) :yum:
+- 1.C语言基础知识(C_test_project) :yum:
 - 2.数据结构练习(data_structure_exercise)
 - 3.leetcode题解(leetcode)
 - 4.leetcode本地题解(leetcode_project_exercise)
@@ -13,7 +13,7 @@
 
 ---
 ### 正文
-#### 1.**c语言练习（C_test_project）**
+#### 1.**C语言基础知识（C_test_project）**
 ##### （1）数据类型
 
 2.局部变量与全局变量
