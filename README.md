@@ -1,15 +1,18 @@
-# C语言 （完善中）
+# 计算机相关知识 （完善中）
 >Markdown语法速查表：https://markdown.com.cn/cheat-sheet.html
-- A valuable resource for novice Chinese C language learners.
+- A valuable resource.
 - Completed by LXL
 
 ---
 ## 目录
 - 1.C语言基础知识(C_test_project) :yum:
-- 2.数据结构练习(data_structure_exercise)
-- 3.leetcode题解(leetcode)
-- 4.leetcode本地题解(leetcode_project_exercise)
-- 5.VSCode安装、配置环境、插件、一些问题
+- 2.数据结构相关知识及练习(data_structure_exercise)
+- 3.计算机组成原理
+- 4.操作系统
+- 5.计算机网络
+- 6.leetcode题解(leetcode)
+- 7.leetcode本地题解(leetcode_project_exercise)
+- 8.VSCode安装、配置环境、插件、一些问题
 
 ---
 ### 正文
@@ -34,13 +37,32 @@
 
 
 ---
-#### 3.**leetcode题解（leetcode）**
+#### 3.计算机组成原理
+
+---
+#### 4.操作系统
+
+---
+#### 5.计算机网络
+
+---
+#### 6.**leetcode题解（leetcode）**
 - ##### （1）两数之和
 >###### 解题思路：
->1.
->2.
+>1.具体方法：
+>2.算法思想：
+>3.易错提醒：
+>4.时间复杂度：  
+>5.空间复杂度：
+>6.优化方向：
 - 2.两数相加
 >###### 解题思路：
+>1.具体方法：
+>2.算法思想：
+>3.易错提醒：
+>4.时间复杂度：  
+>5.空间复杂度：
+>6.优化方向：
 
 - 3.无重复字符的最长字串
 >###### 解题思路：
@@ -52,14 +74,16 @@
 >1.具体方法：合并两个有序数组为一个有序数组，然后计算合并后的有序数组的中位数。
 >2.算法思想：归并排序。
 >3.易错提醒：注意计算中位数时，要将数据强制转换为double类型，不然偶数个int类型元素的中位数做除法精度丧失。
+>4.时间复杂度：  、空间复杂度：
+>5.优化方向：
 
 ---
-#### 4.**leetcode本地题解（leetcode_project_exercise）**
+#### 7.**leetcode本地题解（leetcode_project_exercise）**
 
 略，同上思路即可
 
 ---
-#### 5. **VSCode安装、配置环境、插件、一些问题**
+#### 8. **VSCode安装、配置环境、插件、一些问题**
 
    1. 打开网站：`https://code.visualstudio.com`，下载VSCode并解压安装到合适的文件夹
  
