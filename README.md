@@ -2,6 +2,7 @@
 >Markdown语法速查表：https://markdown.com.cn/cheat-sheet.html
 - A valuable resource.
 - Completed by LXL
+- Free sharing for all enthusiasts
 
 ---
 ## 目录
@@ -18,7 +19,6 @@
 ### 正文
 #### 1.**C语言基础知识（C_test_project）**
 ##### （1）数据类型
-
 2.局部变量与全局变量
 3.字符串
 4.条件语句
