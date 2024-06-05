@@ -37,7 +37,7 @@ int binsearch(int x, int v[], int n)
 bool verify(char x[])
 {
     char password[] = "abc123!";
-    if (x == password)
+    if (strcmp(x,password)==0)//对两个字符串进行大小写敏感的比较
     {
         return true;
     }
@@ -82,14 +82,14 @@ int main()
     {
         printf("请输入登录密码：\n");
         scanf("%s", &pw);
-        if (verify(pw) == true)
+        if (verify(pw))
         {
             printf("输入成功,登陆ing");
             break;
         }
-        if (verify(pw) == false)
+        else
         {
-            printf("输入错误");
+            printf("输入错误\n");
         }
         if (ci == 1)
         {
