@@ -83,7 +83,6 @@ int main()
         printf("请输入登录密码：\n");
         scanf("%s", &pw);
         if (verify(pw) == true)
-            ;
         {
             printf("输入成功,登陆ing");
             break;
