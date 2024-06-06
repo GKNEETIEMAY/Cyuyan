@@ -31,12 +31,16 @@ int binsearch(int x, int v[], int n)
         {
             return i; // 返回数字x的下标
         }
+        else
+        {
+            printf("所寻找数字不在数组中\n");
+        }
     }
 }
 // 模拟登陆，解5
 bool verify(char x[])
 {
-    char password[] = "abc123!";
+    char password[] = "abc123!";//引入数据库
     if (strcmp(x, password) == 0) // 对两个字符串进行大小写敏感的比较
     {
         return true;
@@ -95,6 +99,5 @@ int main()
             break;
         }
     }
-
     return 0;
 }
