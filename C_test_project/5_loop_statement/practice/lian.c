@@ -22,7 +22,7 @@ int y(int x)
     }
 }
 // 在有序数组v[n]中查找某个数字x，解3
-int binsearch(int x, int v[], int n)
+int search(int x, int v[], int n)
 {
     int i;
     for (i = 0; i < n; i++)
@@ -73,10 +73,16 @@ int main()
     int y;   // 需要找到的数字
     printf("请输入需要找到的数字\n");
     scanf("%d", &y);
-    num = binsearch(y, v, 10);
+    num = search(y, v, 10);
     printf("所找的数字的下标是:%d\n", num);
     printf("----------------分割线----------------------\n");
     // 题解4：
+
+
+
+
+
+    
     printf("----------------分割线----------------------\n");
     // 题解5：
     char pw[] = {0};
