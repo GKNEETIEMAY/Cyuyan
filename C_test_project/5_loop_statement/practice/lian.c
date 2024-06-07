@@ -22,7 +22,7 @@ int y(int x)
     }
 }
 // 在有序数组v[n]中查找某个数字x，解3
-int search(int x, int v[], int n)
+int search(int x, int v[], int n) // 顺序查找
 {
     int i;
     for (i = 0; i < n; i++)
@@ -31,16 +31,36 @@ int search(int x, int v[], int n)
         {
             return i; // 返回数字x的下标
         }
-        else
+    }
+    return n;
+}
+int Binary_search(int x, int v[], int n) // 折半查找，时间复杂度O(log2^N)
+{
+    int low, middle, high;
+    low = 0;
+    high = n - 1;
+    for (; low <= high;)
+    {
+        middle = (low + high) / 2;
+        if (x == v[middle])
         {
-            printf("所寻找数字不在数组中\n");
+            return middle;
+        }
+        else if (x < v[middle]) // 如果在中间的左边
+        {
+            high = middle - 1; // 右边最大坐标边界为原中间坐标减1
+        }
+        else if (x > v[middle]) // 如果在中间的右边
+        {
+            low = middle + 1; // 左边最大坐标边界为原中间坐标加1
         }
     }
+    return n;
 }
 // 模拟登陆，解5
 bool verify(char x[])
 {
-    char password[] = "abc123!";//引入数据库
+    char password[] = "abc123!";  // 引入数据库
     if (strcmp(x, password) == 0) // 对两个字符串进行大小写敏感的比较
     {
         return true;
@@ -69,20 +89,31 @@ int main()
     printf("----------------分割线----------------------\n");
     // 题解3：
     int v[10] = {1, 3, 5, 7, 9, 11, 13, 15, 17, 19};
-    int num; // 寻找的下标
-    int y;   // 需要找到的数字
+    int num, mum; // 寻找的下标
+    int y;        // 需要找到的数字
     printf("请输入需要找到的数字\n");
     scanf("%d", &y);
-    num = search(y, v, 10);
-    printf("所找的数字的下标是:%d\n", num);
+    num = search(y, v, 10); // 顺序查找
+    if (num < 10)
+    {
+        printf("所找的数字的下标是:%d\n", num);
+    }
+    else
+    {
+        printf("所寻找数字不在数组中\n");
+    }
+    mum = Binary_search(y, v, 10); // 折半查找
+    if (mum < 10)
+    {
+        printf("所找的数字的下标是:%d\n", mum);
+    }
+    else
+    {
+        printf("所寻找数字不在数组中\n");
+    }
     printf("----------------分割线----------------------\n");
     // 题解4：
 
-
-
-
-
-    
     printf("----------------分割线----------------------\n");
     // 题解5：
     char pw[] = {0};
