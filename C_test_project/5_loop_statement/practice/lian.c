@@ -9,6 +9,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdbool.h>
+#include<windows.h>
 // 递归求阶乘，解1，2
 int y(int x)
 {
@@ -57,16 +58,19 @@ int Binary_search(int x, int v[], int n) // 折半查找，时间复杂度O(log2
     }
     return n;
 }
-//字符从两端移动，向中间汇聚，解4
-int Gather_together(char x[],int xl,char y[],int yl)//x是要显示的，y是#
+// 字符从两端移动，向中间汇聚，解4
+int Gather_together(char x[], int xl, char y[], int yl) // x是要显示的，y是#
 {
-    if(xl!=yl){
+    if (xl != yl)
+    {
         return 0;
     }
-    for(int i=0;i>yl;i++,yl--){
-        strcpy(y[i], x[i]);
-        strcpy(y[yl],x[yl]);
-        printf("%s\n",y);
+    for (int i = 0; i <= yl; i++, yl--)
+    {
+        y[i]= x[i];
+        y[yl]=x[yl];
+        printf("%s\n", y);
+        Sleep(1000);//单位：ms(毫秒)
     }
     return 0;
 }
@@ -126,12 +130,12 @@ int main()
     }
     printf("----------------分割线----------------------\n");
     // 题解4：12345->0-5
-    char arr1[]="welcome to China!!!!!!";
-    char arr2[]="######################";
-    int arr1_length,arr2_length;
-    arr1_length=(sizeof(arr1)/sizeof(arr1[0]))-2;
-    arr2_length=(sizeof(arr2)/sizeof(arr2[0]))-2;
-    Gather_together(arr1,arr1_length,arr2,arr2_length);
+    char arr1[] = "welcome to China!!!!!!";
+    char arr2[] = "######################";
+    int arr1_length, arr2_length;
+    arr1_length = (sizeof(arr1) / sizeof(arr1[0])) - 2;
+    arr2_length = (sizeof(arr2) / sizeof(arr2[0])) - 2;
+    Gather_together(arr1, arr1_length, arr2, arr2_length);
     printf("----------------分割线----------------------\n");
     // 题解5：
     char pw[] = {0};
