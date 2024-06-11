@@ -88,9 +88,9 @@ bool verify(char x[])
         return false;
     }
 }
-//求最大公约数，解6
+//求最大公约数，辗转相除法，解6
 int Zui(int x,int y){
-    int a=x,b=y,n;
+    int a=x,b=y,n;//a%b...n->a=b,b=n->递归，最终n为最大公约数
     n=a%b;
     if (a%n==0)
     {
