@@ -5,6 +5,7 @@
  * 3.在有序数组v[n]中查找某个数字x
  * 4.多个字符从两端移动，向中间汇聚
  * 5.模拟用户登录情景，只能登陆3次，即只允许输入3次密码，输入超过3次登录失败并退出
+ * 6.求最大公约数
  */
 #include <stdio.h>
 #include <string.h>
@@ -87,7 +88,21 @@ bool verify(char x[])
         return false;
     }
 }
-
+//求最大公约数，解6
+int Zui(int x,int y){
+    int a=x,b=y,n;
+    n=a%b;
+    if (a%n==0)
+    {
+        printf("两数最大公约数是:%d",n);
+        return 0;
+    }
+    else{
+        a=b;
+        b=n;
+        return Zui(a,b);
+    }
+}
 int main()
 {
     int x;
@@ -158,5 +173,10 @@ int main()
             break;
         }
     }
+    printf("----------------分割线----------------------\n");
+    int s1,s2;
+    printf("请输入两个数字：\n");
+    scanf("%d%d",&s1,&s2);
+    Zui(s1,s2);
     return 0;
 }
