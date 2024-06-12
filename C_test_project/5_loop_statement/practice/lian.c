@@ -6,7 +6,7 @@
  * 4.多个字符从两端移动，向中间汇聚
  * 5.模拟用户登录情景，只能登陆3次，即只允许输入3次密码，输入超过3次登录失败并退出
  * 6.求最大公约数
- * 7.1000-2000
+ * 7.1000年-2000年之间的闰年：法1：能被4整除，不能被100整除；2，能被400整除
  */
 #include <stdio.h>
 #include <string.h>
@@ -95,7 +95,7 @@ int Zui(int x,int y){
     n=a%b;
     if (a%n==0)
     {
-        printf("两数最大公约数是:%d",n);
+        printf("两数最大公约数是:%d\n",n);
         return 0;
     }
     else{
@@ -103,6 +103,16 @@ int Zui(int x,int y){
         b=n;
         return Zui(a,b);
     }
+}
+//求1000-2000年之间的闰年，解7
+int Find_year(){
+    int year=1000;
+    for(;year<=2000;year++){
+        if(year%400==0){
+            printf("%d年是闰年",year);
+        }
+    }
+
 }
 int main()
 {
@@ -179,5 +189,7 @@ int main()
     printf("请输入两个数字：\n");
     scanf("%d%d",&s1,&s2);
     Zui(s1,s2);
+    printf("----------------分割线----------------------\n");
+    Find_year;
     return 0;
 }
