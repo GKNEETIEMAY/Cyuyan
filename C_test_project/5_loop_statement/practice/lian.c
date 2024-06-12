@@ -71,7 +71,7 @@ int Gather_together(char x[], int xl, char y[], int yl) // x是要显示的，y�
         y[i]= x[i];
         y[yl]=x[yl];
         printf("%s\n", y);
-        Sleep(1000);//单位：ms(毫秒)
+       //Sleep(1000);//单位：ms(毫秒)
     }
     return 0;
 }
