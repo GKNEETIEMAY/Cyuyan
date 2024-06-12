@@ -93,6 +93,13 @@ bool verify(char x[])
 int Zui(int x, int y)
 {
     int a = x, b = y, n; // a%b...n->a=b,b=n->递归，最终n为最大公约数
+    int temp;
+    if (a < b)//大的数在前
+    {
+        temp = b;
+        b = a;
+        a = temp;
+    }
     n = a % b;
     if (a % n == 0)
     {
