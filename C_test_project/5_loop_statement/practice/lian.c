@@ -92,7 +92,7 @@ bool verify(char x[])
 // 求最大公约数，辗转相除法，解6
 int Zui(int x, int y)
 {
-    int a = x, b = y, n; // a%b...n->a=b,b=n->递归，最终n为最大公约数
+    int a = x, b = y, n; // a%b...n->判断a%n==0?->a=b,b=n->递归，最终n为最大公约数
     int temp;
     if (a < b)//大的数在前
     {
@@ -100,7 +100,7 @@ int Zui(int x, int y)
         b = a;
         a = temp;
     }
-    n = a % b;
+    n = a % b;//13%24==13
     if (a % n == 0)
     {
         printf("两数最大公约数是:%d\n", n);
