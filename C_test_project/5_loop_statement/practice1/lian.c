@@ -94,13 +94,13 @@ int Zui(int x, int y)
 {
     int a = x, b = y, n; // a%b...n->判断a%n==0?->a=b,b=n->递归，最终n为最大公约数
     int temp;
-    if (a < b)//大的数在前
+    if (a < b) // 大的数在前
     {
         temp = b;
         b = a;
         a = temp;
     }
-    n = a % b;//  13%24==13
+    n = a % b; //  13%24==13
     if (a % n == 0)
     {
         printf("两数最大公约数是:%d\n", n);
@@ -203,5 +203,4 @@ int main()
     printf("----------------分割线----------------------\n");
     Find_year();
     return 0;
-    //
 }
