@@ -8,12 +8,12 @@
 #include <math.h>
 int Sum_fraction()
 {
-    float sum=0;
+    double sum=0;
     for(int i=1;i<=100;i++)
     {
         sum=sum+(1/(pow(-1,i-1)*i));
     }
-    printf("%f\n",sum);
+    printf("%lf\n",sum);
     return 0;
 }
 int main()
