@@ -40,6 +40,7 @@ int main()
 {
     int input = 0;
     // C 库函数 void srand(unsigned int seed) 播种由函数 rand 使用的随机数发生器。
+    // 初始化随机数发生器 
     srand((unsigned int)time(NULL));
     do
     {
