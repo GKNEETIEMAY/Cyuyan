@@ -1,6 +1,6 @@
 // 函数
 #include <stdio.h>
-int MAX(int x,int y);//主函数在上时，要在最上方定义一下
+int MAX(int x,int y);//主函数在上时，自己定义的函数要在最上方声明一下,或者整体就在上方
 int main()
 {
     int a, b, c;
@@ -19,7 +19,6 @@ int main()
     }
     return 0;
 }
-
 int MAX(int x, int y)//比较大小函数
 {
     if (x > y)
