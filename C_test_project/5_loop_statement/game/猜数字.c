@@ -40,7 +40,8 @@ int main()
 {
     int input = 0;
     // C 库函数 void srand(unsigned int seed) 播种由函数 rand 使用的随机数发生器。
-    // 初始化随机数发生器 
+    // 初始化随机数发生器
+    // time时间戳：当前时间-计算机起始时间(1970年1月1日 0:0:0),的秒数
     srand((unsigned int)time(NULL));
     do
     {
