@@ -16,6 +16,7 @@ void game()
     // RAND_MAX 是一个常量，它的默认值在不同的实现中会有所不同，但是值至少是 32767。
     int ret = rand() % 100 + 1; // 设置随机数
     int guess;
+    int count =0;
     while (1)
     {
         printf("请输入你猜的数字>");
@@ -23,14 +24,18 @@ void game()
         if (guess > ret)
         {
             printf("猜大了,\n");
+            count++;
         }
         if (guess < ret)
         {
             printf("猜小了,\n");
+            count++;
         }
         if (guess == ret)
         {
             printf("恭喜你,猜对了！\n");
+            count++;
+            printf("你一共猜了%d次\n",count);
             break;
         }
     }
