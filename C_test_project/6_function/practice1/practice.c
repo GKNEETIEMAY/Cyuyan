@@ -3,7 +3,7 @@
 // 3.写一个函数，每调用一次该函数，使num加1
 #include <stdio.h>
 #include <math.h>
-// 试除法判断
+// 试除法判断，解1
 int Is_Prime(int x)
 {
     for (int i = 2; i <= sqrt(x); i++)
@@ -15,7 +15,7 @@ int Is_Prime(int x)
     }
     return 1;
 }
-// 闰年判断，函数里面判断
+// 闰年判断，函数里面判断，解2
 int Find_year(int y)
 {
     if (y % 400 == 0 || (y % 4 == 0 && y % 100 != 0))
@@ -24,6 +24,7 @@ int Find_year(int y)
     }
     return 0;
 }
+//每次调用加1，解3
 int Plus_one(int *x)
 {
     *x=*x+1;
