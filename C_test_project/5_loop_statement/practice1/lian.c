@@ -37,11 +37,12 @@ int search(int x, int v[], int n) // 顺序查找
     }
     return n;
 }
+//                        本质上v是一个指针
 int Binary_search(int x, int v[], int n) // 折半查找，时间复杂度O(log2^N)
 {
     int low, middle, high;
     low = 0;
-    high = n - 1;
+    high = n - 1;//函数数组的元素n不能通过sizeof(v)/sizeof(v[0])计算
     for (; low <= high;)
     {
         middle = (low + high) / 2;
