@@ -27,7 +27,7 @@ int Find_year(int y)
 //每次调用加1，解3
 int Plus_one(int *x)
 {
-    *x=*x+1;
+    *x=*x+1;//或者(*p)++
     return *x;
 }
 
