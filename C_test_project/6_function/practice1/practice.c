@@ -1,6 +1,6 @@
 // 1.判断一个数是否是素数
 // 2.判断一年是不是闰年
-// 3.
+// 3.写一个函数，每调用一次该函数，使num加1
 #include <stdio.h>
 #include <math.h>
 // 试除法判断
@@ -24,6 +24,11 @@ int Find_year(int y)
     }
     return 0;
 }
+int Plus_one(int *x)
+{
+    *x=*x+1;
+    return *x;
+}
 
 int main()
 {
@@ -38,6 +43,7 @@ int main()
     {
         printf("%d不是素数\n", a);
     }
+    printf("----------------分割线----------------------\n");
     int year;
     printf("请输入你要判断的年份>");
     scanf("%d", &year);
@@ -48,6 +54,14 @@ int main()
     else
     {
         printf("%d不是闰年\n", year);
+    }
+    printf("----------------分割线----------------------\n");
+    int num=0;
+    int *p=&num;
+    while (num<10)
+    {
+        Plus_one(p);
+        printf("%d\n",num);
     }
     return 0;
 }
