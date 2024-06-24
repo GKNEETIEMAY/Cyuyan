@@ -1,6 +1,7 @@
 // 1.判断一个数是否是素数
 // 2.判断一年是不是闰年
 // 3.写一个函数，每调用一次该函数，使num加1
+// 4. 接收一个无符号数字，按顺序输出其每位
 #include <stdio.h>
 #include <math.h>
 // 试除法判断，解1
@@ -24,11 +25,20 @@ int Find_year(int y)
     }
     return 0;
 }
-//每次调用加1，解3
+// 每次调用加1，解3
 int Plus_one(int *x)
 {
-    *x=*x+1;//或者(*p)++
+    *x = *x + 1; // 或者(*p)++
     return *x;
+}
+// 递归算法，解4
+void Output_wei(unsigned int x)
+{
+    if (x > 9)
+    {
+        Output_wei(x / 10);
+    }
+    printf("%d\n", x % 10);
 }
 
 int main()
@@ -57,12 +67,15 @@ int main()
         printf("%d不是闰年\n", year);
     }
     printf("----------------分割线----------------------\n");
-    int num=0;
-    int *p=&num;
-    while (num<10)
+    int num1 = 0;
+    int *p = &num1;
+    while (num1 < 10)
     {
         Plus_one(p);
-        printf("%d\n",num);
+        printf("%d\n", num1);
     }
+    printf("----------------分割线----------------------\n");
+    unsigned int num2 = 1234;
+    Output_wei(num2);
     return 0;
 }
