@@ -2,6 +2,7 @@
 // 2.判断一年是不是闰年
 // 3.写一个函数，每调用一次该函数，使num加1
 // 4. 接收一个无符号数字，按顺序输出其每位
+//5.求字符串长度。
 #include <stdio.h>
 #include <math.h>
 // 试除法判断，解1
@@ -40,6 +41,28 @@ void Output_wei(unsigned int x)
     }
     printf("%d\n", x % 10);
 }
+//求字符串长度，解5
+//法1：用数组也可以
+int my_len1(char *str){
+    int count=0;//初始长度为0
+    while (str[count]!='\0')
+    {
+        count++;
+    }
+    return count;
+    
+}
+//法2：用指针
+int my_len2(char *str){
+    int count=0;//初始长度为0
+    while (*str!='\0')
+    {
+        count++;
+        str++;
+    }
+    return count;
+    
+}
 
 int main()
 {
@@ -77,5 +100,13 @@ int main()
     printf("----------------分割线----------------------\n");
     unsigned int num2 = 1234;
     Output_wei(num2);
+    printf("----------------分割线----------------------\n");
+    char arr[]="niu bi!";//7
+    int len1,len2;
+    char *parr=arr;
+    len1=my_len1(parr);//数组模式
+    len2=my_len2(arr);//指针模式
+    printf("len1=%d\n",len1);
+    printf("len2=%d\n",len2);
     return 0;
 }
