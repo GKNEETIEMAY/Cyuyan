@@ -3,6 +3,7 @@
 // 3.写一个函数，每调用一次该函数，使num加1
 // 4. 接收一个无符号数字，按顺序输出其每位
 //5.求字符串长度。
+//6.高效求斐波那契数列：1,1,2,3,5,8,13,21,34...
 #include <stdio.h>
 #include <math.h>
 // 试除法判断，解1
@@ -63,6 +64,23 @@ int my_len2(char *str){
     return count;
     
 }
+//迭代(循环)+递归求斐波那契数列，解6
+int Fib(int num){
+    if (num<=2)
+    {
+        return 1;
+    }
+    else{
+        for (int i = num; i ; i--)
+        {
+            /* code */
+        }
+        
+    }
+    
+    return ;
+}
+
 
 int main()
 {
@@ -108,5 +126,11 @@ int main()
     len2=my_len2(arr);//指针模式
     printf("len1=%d\n",len1);
     printf("len2=%d\n",len2);
+    printf("----------------分割线----------------------\n");
+    int num3,num4;
+    printf("请输入要求的第n个斐波那契数列>");
+    scanf("%d",&num3);
+    num4=Fib(num3);
+    printf("第%d个斐波那契数列数是%d\n",num3,num4);
     return 0;
 }
