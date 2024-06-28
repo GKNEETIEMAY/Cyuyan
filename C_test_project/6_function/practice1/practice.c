@@ -78,7 +78,7 @@ int Fib(int num){
         
     }
     
-    return ;
+    return 0 ;
 }
 
 
@@ -132,5 +132,9 @@ int main()
     scanf("%d",&num3);
     num4=Fib(num3);
     printf("第%d个斐波那契数列数是%d\n",num3,num4);
+    printf("----------------分割线----------------------\n");
+    int num5;
+    scanf("%d",&num5);
+    printf("%d",num5);
     return 0;
 }
