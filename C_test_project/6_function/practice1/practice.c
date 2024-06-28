@@ -64,23 +64,19 @@ int my_len2(char *str){
     return count;
     
 }
-//迭代(循环)+递归求斐波那契数列，解6
-int Fib(int num){
-    if (num<=2)
-    {
+//动态规划求斐波那契数列，解6
+int Fib(int n) {
+    if (n < 2) {
         return 1;
     }
-    else{
-        for (int i = num; i ; i--)
-        {
-            /* code */
-        }
-        
+    int p = 1, q = 1, r = 2;
+    for (int i = 2; i <= n-2; ++i) {
+        p = q;
+        q = r;
+        r = p + q;
     }
-    
-    return 0 ;
+    return r;
 }
-
 
 int main()
 {
@@ -133,8 +129,5 @@ int main()
     num4=Fib(num3);
     printf("第%d个斐波那契数列数是%d\n",num3,num4);
     printf("----------------分割线----------------------\n");
-    int num5;
-    scanf("%d",&num5);
-    printf("%d",num5);
     return 0;
 }
