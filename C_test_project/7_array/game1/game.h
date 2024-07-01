@@ -5,8 +5,8 @@
 #include<time.h>
 #include<stdlib.h>
 //函数的声明
-#define ROW 0
-#define COL 0
+#define ROW 3
+#define COL 3
 void init_Board(char board[ROW][COL],int row,int col); //三字棋游戏声明
 void print_Board(char board[ROW][COL],int row,int col);
 void player1(char board[ROW][COL],int row, int col);
