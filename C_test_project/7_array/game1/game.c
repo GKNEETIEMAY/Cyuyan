@@ -1,5 +1,4 @@
 #include "game.h"
-#include <stdio.h>
 void init_Board(char board[ROW][COL], int row, int col)
 {
     for (int i = 0; i < row; i++)
@@ -50,7 +49,7 @@ void print_Board(char board[ROW][COL], int row, int col)
 int a, b;
 void player1(char board[ROW][COL], int row, int col)
 {
-    printf("请玩家一下棋(行,列):");
+    
     scanf("%d,%d", &a, &b);
     if ((a - 1 >= 0 && a - 1 < row) && (b - 1 < col && b - 1 >= 0))
     {
@@ -61,19 +60,19 @@ void player1(char board[ROW][COL], int row, int col)
         else
         {
             printf("此位置已经被占,请玩家重新输入>\n");
-            player1(board,ROW,COL);
+            player1(board, ROW, COL);
         }
     }
     else
     {
-        printf("超出棋盘大小...\n");
-        player1(board,ROW,COL);
+        printf("超出棋盘大小,请玩家重新输入>\n");
+        player1(board, ROW, COL);
     }
 }
-void player2(char board[ROW][COL], int row, int col)
+void computer(char board[ROW][COL], int row, int col)
 {
-    printf("请玩家二下棋(行,列):");
-    scanf("%d,%d", &a, &b);
+    a = rand() % row + 1;
+    b = rand() % col + 1;
     if ((a - 1 >= 0 && a - 1 < row) && (b - 1 < col && b - 1 >= 0))
     {
         if (board[a - 1][b - 1] == ' ')
@@ -82,53 +81,188 @@ void player2(char board[ROW][COL], int row, int col)
         }
         else
         {
-            printf("此位置已经被占,请玩家重新输入>\n");
-            player2(board,ROW,COL);
+            computer(board, ROW, COL);
         }
     }
     else
     {
-        printf("超出棋盘大小...\n");
-        player2(board,ROW,COL);
+        computer(board, ROW, COL);
     }
 }
 bool verify1(char board[ROW][COL], int row, int col)
 {
+    // 横三
+    int count = 0; // 记录每行有多少个'*'
     for (int i = 0; i < row; i++)
     {
         for (int j = 0; j < col; j++)
         {
-            if(board[i][j]=='*')
+            if (board[i][j] == '*')
             {
-
+                count = count + 1;
             }
+        }
+        if (count == col)
+        {
+            return true;
+        }
+        else
+        {
+            count = 0;
+        }
+    }
+    // 竖三
+    count = 0;
+    for (int j = 0; j < col; j++)
+    {
+        for (int i = 0; i < row; i++)
+        {
+            if (board[i][j] == '*')
+            {
+                count = count + 1;
+            }
+        }
+        if (count == row)
+        {
+            return true;
+        }
+        else
+        {
+            count = 0;
+        }
+    }
+    count = 0;
+    // 正斜三
+    for (int i = 0; i < row; i++)
+    {
+        if (board[i][i] == '*')
+        {
+            count = count + 1;
+        }
+    }
+    if (count == row)
+    {
+        return true;
+    }
+    else
+    {
+        count = 0;
+    }
+    //反斜三
+    for (int i = row-1,j=0; i >= 0; i--,j++)
+    {
+        if (board[i][j] == '*')
+        {
+            count = count + 1;
         }
         
     }
-    return false;
+    if (count == row)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
 }
 bool verify2(char board[ROW][COL], int row, int col)
 {
-    return false;
-}
-//平局
-bool verify3(char board[ROW][COL], int row, int col)
-{
-    int count=0;
+    // 横三
+    int count = 0; // 记录每行有多少个'#'
     for (int i = 0; i < row; i++)
     {
         for (int j = 0; j < col; j++)
         {
-            if(board[i][j]!=' ')
+            if (board[i][j] == '#')
             {
-                count=count+1;
+                count = count + 1;
+            }
+        }
+        if (count == col)
+        {
+            return true;
+        }
+        else
+        {
+            count = 0;
+        }
+    }
+    // 竖三
+    count = 0;
+    for (int j = 0; j < col; j++)
+    {
+        for (int i = 0; i < row; i++)
+        {
+            if (board[i][j] == '#')
+            {
+                count = count + 1;
+            }
+        }
+        if (count == row)
+        {
+            return true;
+        }
+        else
+        {
+            count = 0;
+        }
+    }
+    count = 0;
+    // 正斜三
+    for (int i = 0; i < row; i++)
+    {
+        if (board[i][i] == '#')
+        {
+            count = count + 1;
+        }
+    }
+    if (count == row)
+    {
+        return true;
+    }
+    else
+    {
+        count = 0;
+    }
+    //反斜三
+    for (int i = row-1,j=0; i >= 0; i--,j++)
+    {
+        if (board[i][j] == '#')
+        {
+            count = count + 1;
+        }
+        
+    }
+    if (count == row)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
+// 平局
+bool verify3(char board[ROW][COL], int row, int col)
+{
+    int count = 0;
+    for (int i = 0; i < row; i++)
+    {
+        for (int j = 0; j < col; j++)
+        {
+            if (board[i][j] != ' ')
+            {
+                count = count + 1;
             }
         }
     }
-    if(count==(row*col)){
+    if (count == (row * col))
+    {
         return true;
     }
-    else{
+    else
+    {
         return false;
     }
 }

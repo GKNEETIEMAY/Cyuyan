@@ -7,11 +7,12 @@ void game()
     print_Board(board, ROW, COL);
     while (true)
     {
+        printf("请玩家下棋(行,列)>");
         player1(board, ROW, COL);
         print_Board(board, ROW, COL);
         if (verify1(board, ROW, COL)==true)
         {
-            printf("玩家一获胜!\n");
+            printf("玩家获胜!\n");
             break;
         }
         if (verify3(board, ROW, COL)==true)
@@ -19,11 +20,12 @@ void game()
             printf("平局...\n");
             break;
         }
-        player2(board, ROW, COL);
+        printf("电脑下棋>\n");
+        computer(board, ROW, COL);
         print_Board(board, ROW, COL);
         if (verify2(board, ROW, COL)==true)
         {
-            printf("玩家二获胜!\n");
+            printf("电脑获胜!\n");
             break;
         }
         if (verify3(board, ROW, COL)==true)
@@ -45,6 +47,7 @@ void menu()
 void test()
 {
     int input = 0;
+    srand((unsigned int)time(NULL));
     do
     {
         menu();
