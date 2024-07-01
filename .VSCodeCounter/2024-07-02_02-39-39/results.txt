@@ -1,0 +1,121 @@
+Date : 2024-07-02 02:39:39
+Directory : d:\vscodeproject\Cyuyan
+Total : 60 files,  2064 codes, 472 comments, 144 blanks, all 2680 lines
+
+Languages
++----------+------------+------------+------------+------------+------------+
+| language | files      | code       | comment    | blank      | total      |
++----------+------------+------------+------------+------------+------------+
+| C        |         42 |      1,705 |        469 |         76 |      2,250 |
+| Markdown |         10 |        333 |          0 |         68 |        401 |
+| C++      |          6 |         24 |          3 |          0 |         27 |
+| JSON     |          2 |          2 |          0 |          0 |          2 |
++----------+------------+------------+------------+------------+------------+
+
+Directories
++---------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                    | files      | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                       |         60 |      2,064 |        472 |        144 |      2,680 |
+| . (Files)                                                                                               |          1 |         78 |          0 |         15 |         93 |
+| .VSCodeCounter                                                                                          |         10 |        246 |          0 |         52 |        298 |
+| .VSCodeCounter\2024-05-20_23-33-24                                                                      |          5 |         97 |          0 |         26 |        123 |
+| .VSCodeCounter\2024-06-05_00-23-24                                                                      |          5 |        149 |          0 |         26 |        175 |
+| C_test_project                                                                                          |         24 |      1,203 |        330 |         35 |      1,568 |
+| C_test_project\10_define_and_macro                                                                      |          1 |         11 |          2 |          0 |         13 |
+| C_test_project\11_pointer                                                                               |          2 |         64 |         37 |          1 |        102 |
+| C_test_project\11_pointer\course                                                                        |          1 |         10 |         29 |          1 |         40 |
+| C_test_project\11_pointer\practice                                                                      |          1 |         54 |          8 |          0 |         62 |
+| C_test_project\12_struct                                                                                |          1 |         23 |          7 |          5 |         35 |
+| C_test_project\1_datatype                                                                               |          1 |         12 |          2 |          0 |         14 |
+| C_test_project\2_VariablesandConstants                                                                  |          1 |         18 |         17 |          2 |         37 |
+| C_test_project\3_character_string                                                                       |          1 |         24 |          6 |          1 |         31 |
+| C_test_project\4_Branch                                                                                 |          2 |         85 |         33 |          1 |        119 |
+| C_test_project\5_loop_statement                                                                         |          4 |        356 |         77 |          3 |        436 |
+| C_test_project\5_loop_statement\course                                                                  |          1 |         44 |         34 |          2 |         80 |
+| C_test_project\5_loop_statement\game                                                                    |          1 |         61 |          9 |          0 |         70 |
+| C_test_project\5_loop_statement\practice1                                                               |          1 |        184 |         23 |          0 |        207 |
+| C_test_project\5_loop_statement\practice2                                                               |          1 |         67 |         11 |          1 |         79 |
+| C_test_project\6_function                                                                               |          4 |        157 |         34 |          4 |        195 |
+| C_test_project\6_function\course                                                                        |          3 |         41 |         20 |          1 |         62 |
+| C_test_project\6_function\practice1                                                                     |          1 |        116 |         14 |          3 |        133 |
+| C_test_project\7_array                                                                                  |          4 |        401 |         40 |          9 |        450 |
+| C_test_project\7_array\course                                                                           |          1 |         65 |         20 |          5 |         90 |
+| C_test_project\7_array\game1_三字棋                                                                        |          3 |        336 |         20 |          4 |        360 |
+| C_test_project\8_operateor                                                                              |          1 |         10 |         26 |          3 |         39 |
+| C_test_project\9_keyword                                                                                |          2 |         42 |         49 |          6 |         97 |
+| data_structure_exercise                                                                                 |          1 |          9 |          0 |          2 |         11 |
+| data_structure_exercise\Linklist_1                                                                      |          1 |          9 |          0 |          2 |         11 |
+| leetcode                                                                                                |         13 |        373 |        138 |         36 |        547 |
+| leetcode_project_exercise                                                                               |          6 |        113 |          4 |          1 |        118 |
+| leetcode_project_exercise\leetcode_3_lengthOfLongestSubstring                                           |          3 |         63 |          2 |          1 |         66 |
+| leetcode_project_exercise\leetcode_9_isPalindrome                                                       |          3 |         50 |          2 |          0 |         52 |
+| test1_hello                                                                                             |          5 |         42 |          0 |          3 |         45 |
++---------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++---------------------------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| filename                                                                                                | language | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| d:\vscodeproject\Cyuyan\.VSCodeCounter\2024-05-20_23-33-24\details.md                                   | Markdown |         39 |          0 |          6 |         45 |
+| d:\vscodeproject\Cyuyan\.VSCodeCounter\2024-05-20_23-33-24\diff-details.md                              | Markdown |          9 |          0 |          6 |         15 |
+| d:\vscodeproject\Cyuyan\.VSCodeCounter\2024-05-20_23-33-24\diff.md                                      | Markdown |         12 |          0 |          7 |         19 |
+| d:\vscodeproject\Cyuyan\.VSCodeCounter\2024-05-20_23-33-24\results.json                                 | JSON     |          1 |          0 |          0 |          1 |
+| d:\vscodeproject\Cyuyan\.VSCodeCounter\2024-05-20_23-33-24\results.md                                   | Markdown |         36 |          0 |          7 |         43 |
+| d:\vscodeproject\Cyuyan\.VSCodeCounter\2024-06-05_00-23-24\details.md                                   | Markdown |         48 |          0 |          6 |         54 |
+| d:\vscodeproject\Cyuyan\.VSCodeCounter\2024-06-05_00-23-24\diff-details.md                              | Markdown |         30 |          0 |          6 |         36 |
+| d:\vscodeproject\Cyuyan\.VSCodeCounter\2024-06-05_00-23-24\diff.md                                      | Markdown |         29 |          0 |          7 |         36 |
+| d:\vscodeproject\Cyuyan\.VSCodeCounter\2024-06-05_00-23-24\results.json                                 | JSON     |          1 |          0 |          0 |          1 |
+| d:\vscodeproject\Cyuyan\.VSCodeCounter\2024-06-05_00-23-24\results.md                                   | Markdown |         41 |          0 |          7 |         48 |
+| d:\vscodeproject\Cyuyan\C_test_project\10_define_and_macro\dam.c                                        | C        |         11 |          2 |          0 |         13 |
+| d:\vscodeproject\Cyuyan\C_test_project\11_pointer\course\p.c                                            | C        |         10 |         29 |          1 |         40 |
+| d:\vscodeproject\Cyuyan\C_test_project\11_pointer\practice\practice.c                                   | C        |         54 |          8 |          0 |         62 |
+| d:\vscodeproject\Cyuyan\C_test_project\12_struct\st.c                                                   | C        |         23 |          7 |          5 |         35 |
+| d:\vscodeproject\Cyuyan\C_test_project\1_datatype\main.c                                                | C        |         12 |          2 |          0 |         14 |
+| d:\vscodeproject\Cyuyan\C_test_project\2_VariablesandConstants\main.c                                   | C        |         18 |         17 |          2 |         37 |
+| d:\vscodeproject\Cyuyan\C_test_project\3_character_string\test.c                                        | C        |         24 |          6 |          1 |         31 |
+| d:\vscodeproject\Cyuyan\C_test_project\4_Branch\tes.c                                                   | C        |         74 |         33 |          0 |        107 |
+| d:\vscodeproject\Cyuyan\C_test_project\4_Branch\错误发现.md                                                 | Markdown |         11 |          0 |          1 |         12 |
+| d:\vscodeproject\Cyuyan\C_test_project\5_loop_statement\course\main.c                                   | C        |         44 |         34 |          2 |         80 |
+| d:\vscodeproject\Cyuyan\C_test_project\5_loop_statement\game\猜数字.c                                      | C        |         61 |          9 |          0 |         70 |
+| d:\vscodeproject\Cyuyan\C_test_project\5_loop_statement\practice1\lian.c                                | C        |        184 |         23 |          0 |        207 |
+| d:\vscodeproject\Cyuyan\C_test_project\5_loop_statement\practice2\practice.c                            | C        |         67 |         11 |          1 |         79 |
+| d:\vscodeproject\Cyuyan\C_test_project\6_function\course\MAX.c                                          | C        |         11 |          0 |          0 |         11 |
+| d:\vscodeproject\Cyuyan\C_test_project\6_function\course\Max.h                                          | C++      |          4 |          1 |          0 |          5 |
+| d:\vscodeproject\Cyuyan\C_test_project\6_function\course\main.c                                         | C        |         26 |         19 |          1 |         46 |
+| d:\vscodeproject\Cyuyan\C_test_project\6_function\practice1\practice.c                                  | C        |        116 |         14 |          3 |        133 |
+| d:\vscodeproject\Cyuyan\C_test_project\7_array\course\main.c                                            | C        |         65 |         20 |          5 |         90 |
+| d:\vscodeproject\Cyuyan\C_test_project\7_array\game1_三字棋\game.c                                         | C        |        247 |         18 |          3 |        268 |
+| d:\vscodeproject\Cyuyan\C_test_project\7_array\game1_三字棋\game.h                                         | C++      |         16 |          1 |          0 |         17 |
+| d:\vscodeproject\Cyuyan\C_test_project\7_array\game1_三字棋\test.c                                         | C        |         73 |          1 |          1 |         75 |
+| d:\vscodeproject\Cyuyan\C_test_project\8_operateor\main.c                                               | C        |         10 |         26 |          3 |         39 |
+| d:\vscodeproject\Cyuyan\C_test_project\9_keyword\add.c                                                  | C        |         10 |          8 |          1 |         19 |
+| d:\vscodeproject\Cyuyan\C_test_project\9_keyword\kw.c                                                   | C        |         32 |         41 |          5 |         78 |
+| d:\vscodeproject\Cyuyan\README.md                                                                       | Markdown |         78 |          0 |         15 |         93 |
+| d:\vscodeproject\Cyuyan\data_structure_exercise\Linklist_1\01.c                                         | C        |          9 |          0 |          2 |         11 |
+| d:\vscodeproject\Cyuyan\leetcode\1.两数之和.c                                                               | C        |         19 |         15 |          3 |         37 |
+| d:\vscodeproject\Cyuyan\leetcode\121.买卖股票的最佳时机.c                                                        | C        |         18 |          9 |          3 |         30 |
+| d:\vscodeproject\Cyuyan\leetcode\2.两数相加.c                                                               | C        |         31 |         14 |          2 |         47 |
+| d:\vscodeproject\Cyuyan\leetcode\26.删除有序数组中的重复项.c                                                       | C        |         13 |          7 |          3 |         23 |
+| d:\vscodeproject\Cyuyan\leetcode\27.移除元素.c                                                              | C        |         26 |         11 |          4 |         41 |
+| d:\vscodeproject\Cyuyan\leetcode\3.无重复字符的最长子串.c                                                         | C        |         27 |          9 |          1 |         37 |
+| d:\vscodeproject\Cyuyan\leetcode\4.寻找两个正序数组的中位数.c                                                       | C        |         64 |         15 |          2 |         81 |
+| d:\vscodeproject\Cyuyan\leetcode\5.最长回文子串.c                                                             | C        |         47 |          9 |          2 |         58 |
+| d:\vscodeproject\Cyuyan\leetcode\509.斐波那契数.c                                                            | C        |         13 |          8 |          5 |         26 |
+| d:\vscodeproject\Cyuyan\leetcode\6.z-字形变换.c                                                             | C        |          2 |         10 |          4 |         16 |
+| d:\vscodeproject\Cyuyan\leetcode\80.删除有序数组中的重复项-ii.c                                                    | C        |         25 |         13 |          3 |         41 |
+| d:\vscodeproject\Cyuyan\leetcode\88.合并两个有序数组.c                                                          | C        |         54 |         11 |          2 |         67 |
+| d:\vscodeproject\Cyuyan\leetcode\9.回文数.c                                                                | C        |         34 |          7 |          2 |         43 |
+| d:\vscodeproject\Cyuyan\leetcode_project_exercise\leetcode_3_lengthOfLongestSubstring\zui.c             | C        |         52 |          2 |          1 |         55 |
+| d:\vscodeproject\Cyuyan\leetcode_project_exercise\leetcode_3_lengthOfLongestSubstring\zui.h             | C++      |          1 |          0 |          0 |          1 |
+| d:\vscodeproject\Cyuyan\leetcode_project_exercise\leetcode_3_lengthOfLongestSubstring\zuichangzichuan.c | C        |         10 |          0 |          0 |         10 |
+| d:\vscodeproject\Cyuyan\leetcode_project_exercise\leetcode_9_isPalindrome\huiwen.c                      | C        |         36 |          0 |          0 |         36 |
+| d:\vscodeproject\Cyuyan\leetcode_project_exercise\leetcode_9_isPalindrome\huiwen.h                      | C++      |          1 |          1 |          0 |          2 |
+| d:\vscodeproject\Cyuyan\leetcode_project_exercise\leetcode_9_isPalindrome\huiwen1.c                     | C        |         13 |          1 |          0 |         14 |
+| d:\vscodeproject\Cyuyan\test1_hello\hello_world.c                                                       | C        |         26 |          0 |          3 |         29 |
+| d:\vscodeproject\Cyuyan\test1_hello\max.c                                                               | C        |          7 |          0 |          0 |          7 |
+| d:\vscodeproject\Cyuyan\test1_hello\max.h                                                               | C++      |          1 |          0 |          0 |          1 |
+| d:\vscodeproject\Cyuyan\test1_hello\min.c                                                               | C        |          7 |          0 |          0 |          7 |
+| d:\vscodeproject\Cyuyan\test1_hello\min.h                                                               | C++      |          1 |          0 |          0 |          1 |
+| Total                                                                                                   |          |      2,064 |        472 |        144 |      2,680 |
++---------------------------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
