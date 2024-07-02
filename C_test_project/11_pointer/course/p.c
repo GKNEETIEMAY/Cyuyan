@@ -37,4 +37,5 @@ int main()
     *pr =5.5;
     printf("r=%f,*pr=r=%f\n",r,*pr);
     return 0;
+    
 }
