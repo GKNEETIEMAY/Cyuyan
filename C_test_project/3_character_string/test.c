@@ -15,7 +15,8 @@ int main()
     arr2[0] = 'd';
     printf("arr2=%s\n", arr2);
     // strlen()是求字符串长度
-    printf("arr2的长度是%d\n", strlen(arr2));
+    printf("arr2的长度是%d\n", strlen(arr2));//不含'\0'
+    printf("arr2的长度是%d\n", sizeof(arr2)/sizeof(arr2[0]));//含'\0'
     for (i = 0; i < 4; i++)
     {
         printf("arr2[%d]=%c\n", i, arr2[i]);
