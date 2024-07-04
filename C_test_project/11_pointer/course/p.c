@@ -40,4 +40,5 @@ int main()
     printf("r=%f,*pr=r=%f\n",r,*pr);
     return 0;
     
+    
 }
