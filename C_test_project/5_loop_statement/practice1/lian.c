@@ -42,7 +42,7 @@ int Binary_search(int x, int v[], int n) // 折半查找，时间复杂度O(log2
 {
     int low, middle, high;
     low = 0;
-    high = n - 1;//函数数组的元素n不能通过sizeof(v)/sizeof(v[0])计算
+    high = n - 1; // 函数数组的元素n不能通过sizeof(v)/sizeof(v[0])计算
     for (; low <= high;)
     {
         middle = (low + high) / 2;
@@ -93,26 +93,15 @@ bool verify(char x[])
 // 求最大公约数，辗转相除法，解6
 int Zui(int x, int y)
 {
-    int a = x, b = y, n; // a%b...n->判断a%n==0?->a=b,b=n->递归，最终n为最大公约数
-    int temp;
-    if (a < b) // 大的数在前
+    int z;
+    while (y)
     {
-        temp = b;
-        b = a;
-        a = temp;
+        z = x % y;
+        x = y;
+        y = z;
     }
-    n = a % b; //  13%24==13
-    if (a % n == 0)
-    {
-        printf("两数最大公约数是:%d\n", n);
-        return 0;
-    }
-    else
-    {
-        a = b;
-        b = n;
-        return Zui(a, b);
-    }
+    printf("最大公约数是%d\n",x);
+    return 0;
 }
 // 求1000-2000年之间的闰年，解7
 int Find_year()

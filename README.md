@@ -3,6 +3,7 @@
 - A valuable resource.
 - Completed by LXL
 - Free sharing for all enthusiasts
+- This document ought to be perused in tandem with all the other documents.
 
 ---
 ## 目录
@@ -24,11 +25,12 @@
 4.条件语句
 5.循环语句
 6.函数
-7.操作符
-8.关键字
-9.定义和宏
-10.指针
-11.结构体
+7.数组
+8.操作符
+9.关键字
+10.定义和宏
+11.指针
+12.结构体
 
 ---
 #### 2.**数据结构练习（data_structure_exercise）**
@@ -80,7 +82,7 @@
 ---
 #### 7.**leetcode本地题解（leetcode_project_exercise）**
 
-略，同上思路即可
+ACM模式，包含主函数，输入输出。
 
 ---
 #### 8. **VSCode安装、配置环境、插件、一些问题**
@@ -89,4 +91,5 @@
  
    2. 打开网站：`https://www.mingw-w64.org/downloads`，下载安装“x86_64-win32-seh”
    3.
+   ...未完待续...
 ---
