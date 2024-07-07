@@ -65,6 +65,7 @@ int my_len2(char *str){
     
 }
 //动态规划求斐波那契数列，解6
+//递归法太浪费空间时间
 int Fib(int n) {
     if (n < 2) {
         return 1;
