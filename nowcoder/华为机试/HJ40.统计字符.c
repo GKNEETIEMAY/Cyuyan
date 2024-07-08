@@ -7,6 +7,35 @@
 
 /** @nc code=start */
 
+#include <stdio.h>
+#include<string.h>
 
+int main() {
+    char str[1001];
+    int space=0, english_num=0,num=0,other=0;
+    fgets(str,sizeof(str),stdin);
+    str[strcspn(str,"\n")]=0;
+    int length=strlen(str);
+    for (int i = 0; i < length; i++)
+    {
+        if (str[i]==' ')
+        {
+            space+=1;
+        }
+        else if ((str[i]>='A'&&str[i]<='Z')||((str[i]>='a'&&str[i]<='z')))
+        {
+            english_num+=1;
+        }
+        else if ((str[i]>='0'&&str[i]<='9'))
+        {
+            num+=1;
+        }
+        else{
+            other+=1;
+        }
+    }
+    printf("%d\n%d\n%d\n%d\n",english_num,space,num,other);
+    return 0;
+}
 
 /** @nc code=end */
