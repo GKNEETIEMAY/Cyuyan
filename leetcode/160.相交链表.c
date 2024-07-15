@@ -6,13 +6,14 @@
 
 // @lc code=start
 /**
- * Definition for singly-linked list.
- * struct ListNode {
- *     int val;
- *     struct ListNode *next;
- * };
- */
-
+ * Definition for singly-linked list.*/
+#include<stddef.h>
+struct ListNode
+{
+    int val;
+    struct ListNode *next;
+};
+///////////////////////
 struct ListNode *getIntersectionNode(struct ListNode *headA, struct ListNode *headB)
 {
     if (headA == NULL || headB == NULL)
