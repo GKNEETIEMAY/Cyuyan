@@ -1,42 +1,38 @@
-#include<stdio.h>
-#include<string.h>
-#include<stdbool.h>
-bool judge(char *s){
-    int len=strlen(s);
-    int low=0,high=len-1;//从字符串两头遍历
-    while (low<high)
+#include <stdio.h>
+#include <string.h>
+#include <stdbool.h>
+bool judge(char *s)
+{
+    char mp[128] = {};
+    mp[')'] = '(';
+    mp[']'] = '[';
+    mp['}'] = '{';
+
+    int top = 0; // 直接把 s 当作栈
+    for (int i = 0; s[i]; i++)
     {
-        //(),[],{}
-        if (s[low]=='('&&s[high]==')')
-        {
-            low++;
-            high--;
+        char c = s[i];
+        if (mp[c] == 0)
+        {                 
+            s[top++] = c; // 左括号,入栈
         }
-        else if (s[low]=='['&&s[high]==']')
-        {
-            low++;
-            high--;
-        }
-        else if (s[low]=='{'&&s[high]=='}')
-        {
-            low++;
-            high--;
-        }
-        else{
-            return false;
+        else if (top == 0 || s[--top] != mp[c])
+        {                 
+            return false; // 发现右括号，进行比较,没有左括号，或者左括号类型不对
         }
     }
-    return true;
+    return top == 0; // 所有左括号必须匹配完毕，即top==0是true
 }
 int main()
 {
     char s[105];
-    scanf("%s",&s);
-    if(judge(s))
+    scanf("%s", &s);
+    if (judge(s))
     {
         printf("true");
     }
-    else{
+    else
+    {
         printf("false");
     }
     return 0;
