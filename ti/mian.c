@@ -1,39 +1,32 @@
-#include <stdio.h>
-#include <string.h>
-#include <stdbool.h>
-bool judge(char *s)
-{
-    char mp[128] = {};
-    mp[')'] = '(';
-    mp[']'] = '[';
-    mp['}'] = '{';
-
-    int top = 0; // 直接把 s 当作栈
-    for (int i = 0; s[i]; i++)
+#include<stdio.h>
+long long howmany(int n){
+    if(n<=2)
     {
-        char c = s[i];
-        if (mp[c] == 0)
-        {                 
-            s[top++] = c; // 左括号,入栈
-        }
-        else if (top == 0 || s[--top] != mp[c])
-        {                 
-            return false; // 发现右括号，进行比较,没有左括号，或者左括号类型不对
-        }
+        return 1;
     }
-    return top == 0; // 所有左括号必须匹配完毕，即top==0是true
+    long long dp[n];
+    for(int i=0;i<n;i++)
+    {
+        dp[i]=0;
+    }
+    dp[0]=1;
+    dp[1]=1;
+    dp[2]=2;
+    dp[3]=3;
+    for(int i=4;i<n;i++)
+    {
+        dp[i]=dp[i-1]+dp[i-3];
+    }
+    long long ans=dp[n-1];
+    return ans;
 }
 int main()
 {
-    char s[105];
-    scanf("%s", &s);
-    if (judge(s))
-    {
-        printf("true");
-    }
-    else
-    {
-        printf("false");
-    }
+    int n;//台阶数；
+    long long tiao=0;
+    printf("输入台阶数：\n");
+    scanf("%d",&n);
+    tiao=howmany(n);
+    printf("%lld\n",tiao);
     return 0;
 }
