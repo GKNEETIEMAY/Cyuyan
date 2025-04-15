@@ -82,6 +82,5 @@ int main()
 {
     int num[9]={1,2,3,4,5,6,7,8,9};
     int num_size=9;
-    int 
     return 0;
 }
